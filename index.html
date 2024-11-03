@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/Vue3.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <header><h1>Lista de tareas</h1></header>
+    <section id="seccion">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam at assumenda corrupti fugit beatae facere explicabo delectus necessitatibus molestiae dolor, sequi praesentium cupiditate, consectetur culpa ea nesciunt odit similique. Maxime!</p>
+        <input type="text" placeholder="hola, maestra">
+        <hr>
+        <button id="mas" @click="incrementar" :disabled="avance == 100">+</button>
+        <button id="menos" @click="decrementar" :disabled="avance == 0">-</button>
+        <h3>{{avance}}</h3>
+        <div :class="cambioColor" :style="{ width: avance + '%' }">{{ avance }}%</div>
+        <hr>
+        <section>
+            <div v-for="(tarea, index) in tareas" :key="index" @click="tacharTexto(tarea)" :class="{ tachado: tarea.tachado }">
+                {{ tarea.texto }}
+            </div>
+            <h3>Tareas completadas: {{ conteo }}</h3>
+        </section>
+    </section>
+    <script src="js/script.js"></script>
+</body>
+</html>

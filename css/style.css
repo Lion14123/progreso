@@ -1,0 +1,47 @@
+.colorVerde {
+    height: 100%;
+    width: 0;
+    background-color: green;
+    border-radius: 25px;
+    line-height: 30px;
+    text-align: center;
+    color: white;
+}
+.colorAmarillo {
+    height: 100%;
+    width: 0;
+    background-color: yellow;
+    border-radius: 25px;
+    line-height: 30px;
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+.colorRojo {
+    height: 100%;
+    width: 0;
+    background-color: red;
+    border-radius: 25px;
+    line-height: 30px;
+    text-align: center;
+    color: white;
+}
+#mas{
+background-color: green;
+}
+#menos{
+background-color: red;
+}
+.tachado {
+    text-decoration: line-through;
+}
+header{
+    text-align: center;
+    background-color: cyan;
+}
+body{
+    background-color: bisque;
+}
+#seccion{
+    background-color: burlywood;
+    text-align: center;
+}
